@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InferDoom</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .navbar-wrapper {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+    }
+
+    .navbar {
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 6px 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+    }
+
+    .navbar a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .navbar a:first-child {
+      margin-left: 0;
+    }
+
+    .navbar a:hover {
+      color: #007bff;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 22px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .divider {
+      border: none;
+      border-top: 2px solid black;
+      margin: 0;
+    }
+
+    /* === Responsive Styling === */
+    @media (max-width: 768px) {
+      .navbar-wrapper {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        display: none;
+        margin-top: 10px;
+      }
+
+      .navbar a {
+        margin: 10px 0;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .navbar.show {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">InferDoom</div>
+
+    <div class="navbar-wrapper">
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <div class="navbar" id="navbar">
+        <a href="#home">Home</a>
+        <a href="collect.html">Notes</a>
+        <a href="#questions">Questions</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div style="padding: 40px; font-family: Arial, sans-serif; max-width: 900px; margin: auto;">
+  <h1 style="color: #2c3e50;">📘 Welcome to the Student Helper Portal — Your Study Companion!</h1>
+  
+  <p style="font-size: 18px; line-height: 1.6; color: #34495e;">
+    In today's academic journey, students need more than just books. They require smart tools and reliable guidance to succeed — and that's exactly what our website provides. 
+    From important questions and exam-focused notes to clear definitions and solved examples, this platform is built with one goal in mind: <strong>to help Class 10 students learn better and score higher</strong>.
+  </p>
+
+  <h2 style="margin-top: 30px; color: #2980b9;">🎯 What You’ll Find Here:</h2>
+  <ul style="font-size: 17px; color: #2c3e50; line-height: 1.8;">
+    <li>📚 <strong>Subject-wise Notes</strong> – Covering Maths, Science, English, Hindi, SST & Computer</li>
+    <li>❓ <strong>Important & Expected Questions</strong> – Based on past papers and syllabus</li>
+    <li>✍️ <strong>Definitions & Formulas</strong> – Quick revision guides for each chapter</li>
+    <li>🔢 <strong>Solved Examples</strong> – Step-by-step solutions to common problems</li>
+    <li>📄 <strong>PDF Downloads</strong> – Easily accessible for offline study</li>
+  </ul>
+
+  <h2 style="margin-top: 40px; color: #27ae60;">📊 Subject Focus Chart</h2>
+  <p style="color: #7f8c8d; font-size: 16px;">Our most accessed subjects by students this month:</p>
+
+  <div style="margin-top: 10px;">
+    <p>Maths</p>
+    <div style="background: #ecf0f1; border-radius: 20px; overflow: hidden;">
+      <div style="width: 85%; background: #3498db; padding: 8px 0; color: white; text-align: center;">85%</div>
+    </div>
+
+    <p>Science</p>
+    <div style="background: #ecf0f1; border-radius: 20px; overflow: hidden;">
+      <div style="width: 75%; background: #2ecc71; padding: 8px 0; color: white; text-align: center;">75%</div>
+    </div>
+
+    <p>English</p>
+    <div style="background: #ecf0f1; border-radius: 20px; overflow: hidden;">
+      <div style="width: 65%; background: #e67e22; padding: 8px 0; color: white; text-align: center;">65%</div>
+    </div>
+
+    <p>Social Science</p>
+    <div style="background: #ecf0f1; border-radius: 20px; overflow: hidden;">
+      <div style="width: 60%; background: #9b59b6; padding: 8px 0; color: white; text-align: center;">60%</div>
+    </div>
+
+    <p>Hindi</p>
+    <div style="background: #ecf0f1; border-radius: 20px; overflow: hidden;">
+      <div style="width: 50%; background: #e74c3c; padding: 8px 0; color: white; text-align: center;">50%</div>
+    </div>
+  </div>
+
+  <p style="margin-top: 40px; font-size: 16px; color: #2c3e50;">
+    💡 Whether you're revising before exams or starting a new chapter, this website is your digital best friend for all Class 10 subjects. Bookmark it, share it, and keep learning smarter every day!
+  </p>
+</div>
+
+
+</body>
+</html>
